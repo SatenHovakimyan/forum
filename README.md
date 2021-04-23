@@ -95,8 +95,3 @@ Internet forum [in this case about programming language Java] powered by Spring 
                     └───forum:
                             ForumApplicationTests.java
 ```
-## Comments
-The content of questions and answers on the screenshots comes from [Stack Overflow](https://stackoverflow.com/).
-I was faced with those problems during creating application.
-## License
-MIT

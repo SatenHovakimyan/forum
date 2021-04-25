@@ -8,64 +8,39 @@
     <title>Կա հարց կա պատասխան</title>
     <link href="/webjars/materializecss/0.100.2/css/materialize.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    <link th:href = "@{/css/bootstrap.min.css}" rel = "stylesheet">
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" th:src="@{/js/actions.js}"></script>
 </head>
 <body>
-<!--<nav>-->
-<!--    <div class="nav-wrapper">-->
-<!--        <div class="container">-->
-<!--            <ul id="nav-left" class="left hide-on-med-and-down">-->
-<!--                <li><a th:href="@{'/topics'}">All</a></li>-->
-<!--                <li><a th:href="@{'/topics/se'}">Java SE</a></li>-->
-<!--                <li><a th:href="@{'/topics/ee'}">Java EE</a></li>-->
-<!--                <li><a th:href="@{'/topics/jpa'}">JPA/Hibernate</a></li>-->
-<!--                <li><a th:href="@{'/topics/spring'}">Spring</a></li>-->
-<!--                <li><a th:href="@{'/topics/web'}">HTML/CSS/JS</a></li>-->
-<!--            </ul>-->
-<!--            <ul id="nav-right" class="right hide-on-med-and-down">-->
-<!--                <li><a th:href="@{'/profile'}">Profile</a></li>-->
-<!--                <li><a th:href="@{'/logout'}">Logout</a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</nav>-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
+<div class="navbar-fixed">
+<nav>
+    <div class="nav-wrapper">
+        <div class="container">
+<!--            <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Categories!</a>-->
+            <a class="btn dropdown-trigger" href="#!" data-target="dropdown2">Categories<i class="material-icons right">arrow_drop_down</i></a>
+            <ul id='dropdown2' class='dropdown-content'>
+                <li><a th:href="@{'/topics'}">All</a></li>
+                <li><a th:href="@{'/topics'}">All</a></li>
+                <li><a th:href="@{'/topics/se'}">Java SE</a></li>
+                <li><a th:href="@{'/topics/ee'}">Java EE</a></li>
+                <li><a th:href="@{'/topics/jpa'}">JPA/Hibernate</a></li>
+                <li><a th:href="@{'/topics/spring'}">Spring</a></li>
+                <li><a th:href="@{'/topics/web'}">HTML/CSS/JS</a></li>
+            </ul>
+            <ul id="nav-right" class="right hide-on-med-and-down">
+                <li><a th:href="@{'/profile'}">Profile</a></li>
+                <li><a th:href="@{'/logout'}">Logout</a></li>
+            </ul>
+            <div class="nav-content">
+                <span class="nav-title">Title</span>
+                <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+                    <i class="material-icons">add</i>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+            </div>
+        </div>
     </div>
 </nav>
+</div>
 <main layout:fragment="content">
     <p>Default content</p>
 </main>

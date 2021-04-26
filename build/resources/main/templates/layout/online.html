@@ -12,31 +12,28 @@
     <script type="text/javascript" th:src="@{/js/actions.js}"></script>
 </head>
 <body>
+<div class="container">
+    <ul id='dropdown1' class='dropdown-content'>
+<!--        <li><a th:href="@{'/topics'}">All</a></li>-->
+        <li><a th:href="@{'/topics'}">All</a></li>
+        <li><a th:href="@{'/topics/se'}">Java SE</a></li>
+        <li><a th:href="@{'/topics/ee'}">Java EE</a></li>
+        <li><a th:href="@{'/topics/jpa'}">JPA/Hibernate</a></li>
+        <li><a th:href="@{'/topics/spring'}">Spring</a></li>
+        <li><a th:href="@{'/topics/web'}">HTML/CSS/JS</a></li>
+    </ul>
+</div>
 <div class="navbar-fixed">
 <nav>
     <div class="nav-wrapper">
         <div class="container">
-<!--            <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Categories!</a>-->
-            <a class="btn dropdown-trigger" href="#!" data-target="dropdown2">Dropdown<i class="material-icons right">arrow_drop_down</i></a>
-            <ul id='dropdown2' class='dropdown-content'>
-                <li><a th:href="@{'/topics'}">All</a></li>
-                <li><a th:href="@{'/topics'}">All</a></li>
-                <li><a th:href="@{'/topics/se'}">Java SE</a></li>
-                <li><a th:href="@{'/topics/ee'}">Java EE</a></li>
-                <li><a th:href="@{'/topics/jpa'}">JPA/Hibernate</a></li>
-                <li><a th:href="@{'/topics/spring'}">Spring</a></li>
-                <li><a th:href="@{'/topics/web'}">HTML/CSS/JS</a></li>
+            <ul id="nav-left" class="left hide-on-med-and-down">
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Categories<i class="material-icons left">arrow_drop_down</i></a></li>
             </ul>
             <ul id="nav-right" class="right hide-on-med-and-down">
-                <li><a th:href="@{'/profile'}">Profile</a></li>
-                <li><a th:href="@{'/logout'}">Logout</a></li>
+                <li><a th:href="@{'/profile'}"><i class="material-icons left">account_circle</i>Profile</a></li>
+                <li><a th:href="@{'/logout'}"><i class="material-icons left">exit_to_app</i>Logout</a></li>
             </ul>
-            <div class="nav-content">
-                <span class="nav-title">Title</span>
-                <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
-                    <i class="material-icons">add</i>
-                </a>
-            </div>
         </div>
     </div>
 </nav>

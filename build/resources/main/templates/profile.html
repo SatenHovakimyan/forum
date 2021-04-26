@@ -24,6 +24,11 @@
                         </li>
                         <li class="collection-item">
                             <span class="badge">
+                                <span th:text="${user.getMail()}">Mail</span>
+                            </span>Mail:
+                        </li>
+                        <li class="collection-item">
+                            <span class="badge">
                                 <span th:text="${user.displayContentOfOptional()}">Introduction</span>
                             </span>Introduction:
                         </li>

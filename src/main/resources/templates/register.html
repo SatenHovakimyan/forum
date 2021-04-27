@@ -10,15 +10,15 @@
     <article class="container" style="padding-top: 3%;">
         <header class="row">
             <div class="col s12">
-                <h3 class="center">Register</h3>
-                <h5 class="center">Sign up to the Java Forum</h5>
+                <h3 class="center">Գրանցում</h3>
+                <h5 class="center">Գրանվել ծրագրավորման ֆորումում</h5>
             </div>
         </header>
         <section>
             <form th:action="@{/register}" method="post">
                 <div class="row">
                     <div class="col s12">
-                        <label> Nick:
+                        <label> Կեղծանուն:
                             <input type="text" name="username" minlength="3" maxlength="10" data-length="10"
                                    required="required"/>
                         </label>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="row">
                     <div class="col s12">
-                        <label> Mail:
+                        <label> Էլեկտրոնային հասցե:
                             <input type="email" name="mail" minlength="10" maxlength="50" data-length="40"
                                    required="required"/>
                         </label>
@@ -34,27 +34,23 @@
                 </div>
                 <div class="row">
                     <div class="col s12">
-                        <label> Password:
+                        <label> Գաղտնաբառ:
                             <input type="password" name="password" minlength="8" maxlength="15" data-length="15"
                                    id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                                   title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                   title="Պետք է պարունակի գոնե մեկ մեծատառ և մեկ թվանշան, և 8 կամ ավել նիշ"
                                    required="required"/>
                         </label>
-<!--                        <p>-->
-<!--                            <em>Must contain at least one number and one uppercase and lowercase letter, and at least 8-->
-<!--                                or more characters</em></p>-->
                         <style>
                             em {
                                 font-weight: 300;
                             }
                         </style>
-                        <em>Must contain at least one number and one uppercase and lowercase letter, and at least 8
-                            or more characters</em>
+                        <em>Պետք է պարունակի գոնե մեկ մեծատառ և մեկ թվանշան, և 8 կամ ավել նիշ</em>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12">
-                        <label> Introduction:
+                        <label> Նկարագրություն:
                             <input type="text" name="introduction" maxlength="16" data-length="16"
                                    placeholder="[optional]"/>
                         </label>
@@ -62,13 +58,13 @@
                 </div>
                 <div class="row">
                     <div class="col s12 center">
-                        <p class="center">In case of the success, you will be redirected to login page</p>
-                        <p class="center">Otherwise change your username</p>
+                        <p class="center">Գրանցման հաջող ավարտի դեպքում կբացվի մուտքի էջը</p>
+                        <p class="center">Հակառակ դեպքում փոխեք Ձեր մուտքանունը</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12 center">
-                        <button class="btn waves-effect waves-light btn-large" type="submit" name="register">Register
+                        <button class="btn waves-effect waves-light btn-large" type="submit" name="register">Գրանցվել
                         </button>
                     </div>
                 </div>

@@ -8,15 +8,18 @@
     <title>Internet Forum</title>
     <link href="/webjars/materializecss/0.100.2/css/materialize.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link th:href="@{/Static/css/main.css}" href="Static/css/main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <nav>
         <div class="nav-wrapper">
             <div class="container">
                 <ul id="nav-left" class="right hide-on-med-and-down">
-                    <li><a th:href="@{'/'}">Home</a></li>
-                    <li><a th:href="@{'/login'}">Login</a></li>
-                    <li><a th:href="@{'/register'}">Register</a></li>
+                    <li><a th:href="@{'/'}"><i class="material-icons left">home</i>Գլխավոր</a></li>
+                    <li><a th:href="@{'/login'}"><i class="material-icons left">person</i>Մուտք գործել</a></li>
+                    <li><a th:href="@{'/register'}"><i class="material-icons left">person_add</i>Գրանցվել</a></li>
+                    <li><a th:href="@{'/offline-hy'}"><i class="material-icons">language</i></a></li>
                 </ul>
             </div>
         </div>
@@ -28,22 +31,21 @@
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">Java Forum</h5>
-                    <p class="white-text">Programming forum about Java powered by Spring Framework</p>
+                    <h5 class="white-text">Ծրագրավորման ֆորում</h5>
+                    <p class="white-text">Գտիր քեզ հետաքրքրող հարցերի պատասխանները ծրագրավորման հետ կապված մեր ֆորումում, կամ օգնիր ուրիշներին քո գիտելիքներով</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
+                    <h5 class="white-text">Հղումներ</h5>
                     <ul>
-                        <li><a class="white-text" href="https://github.com/SatenHovakimyan">Github</a></li>
-<!--                        <li><a class="white-text" href="https://forum.pasja-informatyki.pl/user/plkpiotr">Pasja Informatyki</a></li>-->
-<!--                        <li><a class="white-text" href="https://plus.google.com/u/0/100065018101140624093">Google+</a></li>-->
+                        <li><a class="white-text" href="https://github.com/SatenHovakimyan/forum/tree/master">Github</a></li>
+                        <li><a class="white-text" href="https://docs.google.com/document/d/1mweFKTi62lkAZyNFDvhrPUxBcnGq-1I_SAxxT8edV8Y/edit?usp=sharing">Փաստաթղթավորում</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                All rights reserved &nbsp;|&nbsp; SatenHovakimyan &nbsp;|&nbsp; 04/2021
+                Դիպլոմային աշխատանք &nbsp;|&nbsp; Սաթեն Հովակիմյան
             </div>
         </div>
     </footer>

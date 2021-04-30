@@ -1,0 +1,32 @@
+com/plkpiotr/forum/controllers/AnswersController.java
+ com.plkpiotr.forum.controllers.AnswersController
+com/plkpiotr/forum/controllers/IndexController.java
+ com.plkpiotr.forum.controllers.IndexController
+com/plkpiotr/forum/repositories/UserRepository.java
+ com.plkpiotr.forum.repositories.UserRepository
+com/plkpiotr/forum/controllers/RegisterController.java
+ com.plkpiotr.forum.controllers.RegisterController
+com/plkpiotr/forum/configuration/SecurityConfiguration.java
+ com.plkpiotr.forum.configuration.SecurityConfiguration
+com/plkpiotr/forum/repositories/AnswerRepository.java
+ com.plkpiotr.forum.repositories.AnswerRepository
+com/plkpiotr/forum/controllers/TopicController.java
+ com.plkpiotr.forum.controllers.TopicController
+com/plkpiotr/forum/configuration/AdditionalLoginConfiguration.java
+ com.plkpiotr.forum.configuration.AdditionalLoginConfiguration
+com/plkpiotr/forum/controllers/LoginController.java
+ com.plkpiotr.forum.controllers.LoginController
+com/plkpiotr/forum/entities/Answer.java
+ com.plkpiotr.forum.entities.Answer
+com/plkpiotr/forum/entities/User.java
+ com.plkpiotr.forum.entities.User
+com/plkpiotr/forum/entities/Topic.java
+ com.plkpiotr.forum.entities.Topic
+com/plkpiotr/forum/controllers/ProfileController.java
+ com.plkpiotr.forum.controllers.ProfileController
+com/plkpiotr/forum/repositories/TopicRepository.java
+ com.plkpiotr.forum.repositories.TopicRepository
+com/plkpiotr/forum/ForumApplication.java
+ com.plkpiotr.forum.ForumApplication
+com/plkpiotr/forum/controllers/TopicsController.java
+ com.plkpiotr.forum.controllers.TopicsController

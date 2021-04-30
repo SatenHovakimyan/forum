@@ -44,11 +44,12 @@ public class RegisterController {
 
     @PostMapping("register")
     public View registerUser(@RequestParam("username") String username, @RequestParam("password") String password,
-                             @RequestParam("introduction") String introduction, HttpServletRequest request) {
+                             @RequestParam("introduction") String introduction,@RequestParam("mail") String mail, HttpServletRequest request) {
         String contextPath = request.getContextPath();
         User user = new User();
         if (userRepository.getUserByUsername(username) == null) {
             user.setUsername(username);
+            user.setMail(mail);
             // I know that it can be blank field, but I did it on purpose to find out about Optionals:
             if (Objects.equals(introduction, ""))
                 user.setIntroduction(null);

@@ -38,6 +38,9 @@ public class User implements UserDetails {
     @Column(length = 16)
     private String introduction;
 
+    @Column(nullable = false, length = 40)
+    private String mail;
+
     private LocalDateTime createdDate;
 
     @OneToMany(mappedBy = "user")
@@ -61,6 +64,14 @@ public class User implements UserDetails {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
     }
 
     @Override
